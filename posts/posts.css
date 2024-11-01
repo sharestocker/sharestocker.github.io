@@ -2,6 +2,7 @@
     max-width: 800px;
     margin: auto;
     padding: 30px;
+    margin-bottom: 35px;
     background-color: var(--white);
     color: var(--eerie-black);
     font-family: var(--ff-inter);
@@ -93,3 +94,47 @@
     background-color: var(--eerie-black);
   }
   
+
+
+
+  .short-line {
+    width: 90%; /* Adjust the width as needed */
+    border-top: 1px solid #ccc; /* Customize the border as desired */
+    margin: 20px auto; /* Center the line horizontally */
+  }
+
+
+
+  .social-share-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .social-share-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-share-buttons a:hover {
+    color: #007bff;
+  }
+  
+  .material-icons {
+    font-size: 24px;
+  }
+  
+
+
+  #published-date {
+    font-weight: 500;
+    color: #333;
+    display: inline;
+  }
+
+  p {
+    font-weight: 500;
+  }
