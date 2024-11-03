@@ -333,6 +333,27 @@
 
 
   
+  <!-- BACK TO TOP BUTTON -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <span>&uarr;</span> <!-- Using an up arrow symbol instead of material icons -->
+  </a>
+
+
+  <script>
+
+    // Function to toggle visibility of the "Back to Top" button
+    window.addEventListener("scroll", function () {
+      let backToTopButton = document.getElementById("backToTop");
+
+      if (window.scrollY > 100) { // Check if scroll is over 100px
+        backToTopButton.style.display = "flex"; // Show button
+      } else {
+        backToTopButton.style.display = "none"; // Hide button
+      }
+    });
+  </script>
+
+
 
 </body>
 
