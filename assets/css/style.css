@@ -1409,3 +1409,11 @@ th {
 td {
   color: #333;
 }
+
+
+
+.short-line {
+  width: 90%; /* Adjust the width as needed */
+  border-top: 1px solid #ccc; /* Customize the border as desired */
+  margin: 20px auto; /* Center the line horizontally */
+}
