@@ -588,7 +588,7 @@ body.active { overflow: hidden; }
 }
 
 .copyright {
-  font-size: var(--fs-8);
+  font-size: var(--fs-9);
   margin-block-start: 25px;
 }
 
@@ -969,7 +969,6 @@ body.active { overflow: hidden; }
   .newsletter .section-title { margin-block-end: 0; }
 
 }
-
 
 
 
