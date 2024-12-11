@@ -77,7 +77,6 @@ function updateCharacterCount() {
 document.getElementById('message').addEventListener('input', updateCharacterCount);
 
 
-
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();
   var name = document.getElementById('name').value;
@@ -103,7 +102,3 @@ function closePopup() {
 }
 
 // Contact Form Submit Popup ends
-
-
-
-
