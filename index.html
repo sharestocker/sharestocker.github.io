@@ -1,167 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
+    <!-- 
     - primary meta tags
   -->
-  <title>ShareStocker – Finance, simplified.</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ShareStocker – Finance, simplified.</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <meta name="title" content="ShareStocker – Finance, simplified.">
+    <meta name="title" content="ShareStocker – Finance, simplified." />
 
-  <meta name="description"
-    content="Welcome to ShareStocker! Discover a community-driven blog sharing honest perspectives, personal finance insights, and stock market knowledge – all crafted for curious investors in a dynamic market.">
+    <meta
+      name="description"
+      content="Welcome to ShareStocker! Discover a community-driven blog sharing honest perspectives, personal finance insights, and stock market knowledge – all crafted for curious investors in a dynamic market."
+    />
 
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-
-  <!-- 
+  <body>
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header section" data-header>
-    <div class="container">
+    <header class="header section" data-header>
+      <div class="container">
+        <a href="/" class="logo">
+          <img
+            src="./assets/images/sharestockerlogo.png"
+            width="129"
+            height="40"
+            alt="ShareStocker logo"
+          />
+        </a>
 
-      <a href="/" class="logo">
-        <img src="./assets/images/sharestockerlogo.png" width="129" height="40" alt="ShareStocker logo">
-      </a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/" class="navbar-link hover:underline" data-nav-link
+                >Home</a
+              >
+            </li>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="/" class="navbar-link hover:underline" data-nav-link>Home</a>
-          </li>
-
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <a href="./Categories/Recent_Posts.html" class="navbar-link hover:underline" data-nav-link>Recent Posts</a>
           </li> -->
 
-          <li class="navbar-item">
-            <a href="/Categories/Guides.html" class="navbar-link hover:underline" data-nav-link>Guides</a>
-          </li>
+            <li class="navbar-item">
+              <a
+                href="/Categories/Guides.html"
+                class="navbar-link hover:underline"
+                data-nav-link
+                >Guides</a
+              >
+            </li>
 
-          <li class="navbar-item">
-            <a href="./Categories/Resources.html" class="navbar-link hover:underline" data-nav-link>Resources</a>
-          </li>
+            <li class="navbar-item">
+              <a
+                href="./Categories/Resources.html"
+                class="navbar-link hover:underline"
+                data-nav-link
+                >Resources</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-        </ul>
-      </nav>
+        <div class="wrapper">
+          <button class="search-btn" aria-label="search" data-search-toggler>
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
-      <div class="wrapper">
+            <span class="span">Search</span>
+          </button>
 
-        <button class="search-btn" aria-label="search" data-search-toggler>
-          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          <button
+            class="nav-toggle-btn"
+            aria-label="toggle menu"
+            data-nav-toggler
+          >
+            <span class="span one"></span>
+            <span class="span two"></span>
+            <span class="span three"></span>
+          </button>
 
-          <span class="span">Search</span>
-        </button>
-
-        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-          <span class="span one"></span>
-          <span class="span two"></span>
-          <span class="span three"></span>
-        </button>
-
-        <!-- <a href="#" class="btn">Join</a> -->
-
+          <!-- <a href="#" class="btn">Join</a> -->
+        </div>
       </div>
+    </header>
 
-    </div>
-  </header>
-
-
-
-
-  <!-- 
+    <!-- 
     - #SEARCH BAR
   -->
 
-  <div class="search-bar" data-search-bar>
+    <div class="search-bar" data-search-bar>
+      <div class="input-wrapper">
+        <input
+          type="search"
+          name="search"
+          placeholder="Search"
+          class="input-field"
+        />
 
-    <div class="input-wrapper">
-      <input type="search" name="search" placeholder="Search" class="input-field">
+        <button
+          class="search-close-btn"
+          aria-label="close search bar"
+          data-search-toggler
+        >
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
 
-      <button class="search-close-btn" aria-label="close search bar" data-search-toggler>
-        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-      </button>
-
+      <p class="search-bar-text">Please enter at least 3 characters</p>
     </div>
 
-    <p class="search-bar-text">Please enter at least 3 characters</p>
+    <div class="overlay" data-overlay data-search-toggler></div>
 
-  </div>
-
-  <div class="overlay" data-overlay data-search-toggler></div>
-
-
-
-  <main>
-    <article>
-
-
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
   - #HERO
  -->
 
-      <section class="section hero" aria-label="home">
-        <div class="container">
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <h1 class="h1 hero-title">
+              <strong class="strong"
+                >Ready to level up your financial knowledge?</strong
+              >
+              Get latest stories, and market insights.
+            </h1>
 
-          <h1 class="h1 hero-title">
-            <strong class="strong">Ready to level up your financial knowledge?</strong> Get latest stories, and market
-            insights.
-          </h1>
+            <div class="wrapper">
+              <form action="" class="newsletter-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email address"
+                  class="email-field"
+                />
 
+                <button type="submit" class="btn">Subscribe</button>
+              </form>
 
-          <div class="wrapper">
-
-            <form action="" class="newsletter-form">
-              <input type="email" name="email_address" placeholder="Your email address" class="email-field">
-
-              <button type="submit" class="btn">Subscribe</button>
-            </form>
-
-            <p class="newsletter-text">
-              Get the email newsletter and unlock access to exclusive content and updates
-            </p>
-
+              <p class="newsletter-text">
+                Get the email newsletter and unlock access to exclusive content
+                and updates
+              </p>
+            </div>
           </div>
+        </section>
 
-        </div>
-      </section>
+        <section class="section recent" aria-label="recent post">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">
+                See what we’ve <strong class="strong">written recently</strong>
+              </h2>
+            </div>
+            <ul class="grid-list" id="recent-posts"></ul>
+          </div>
+          <script>
+            // Function to fetch posts from posts.json and dynamically display them
+            async function loadRecentPosts() {
+              const response = await fetch("./posts.json"); // Adjust path as needed
+              const posts = await response.json();
+  
+              const recentPostsContainer =
+                document.getElementById("recent-posts");
+              recentPostsContainer.innerHTML = ""; // Clear existing content
+  
+              // Get the 6 most recent posts
+              const latestPosts = posts.slice(0, 6); // Assuming posts are sorted in descending order
+  
+              latestPosts.forEach((post) => {
+                const postCard = `
+        <li>
+          <div class="blog-card">
+            <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+              <img src="${post.image}" width="550" height="660" loading="lazy"
+                alt="${
+                  post.title
+                }" class="img-cover" onclick="window.location.href='${
+                  post.link
+                }';" style="cursor: pointer;">
+              <ul class="avatar-list absolute">
+                <li class="avatar-item">
+                  <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                    <img src="${
+                      post.authorImage
+                    }" width="100" height="100" loading="lazy" alt="Author" class="img-cover">
+                  </a>
+                </li>
+              </ul>
+            </figure>
+            <div class="card-content">
+              <ul class="card-meta-list">
+                ${post.tags
+                  .map(
+                    (tag) =>
+                      `<li><a href="${post.link}" class="card-tag">${tag}</a></li>`
+                  )
+                  .join("")}
+              </ul>
+              <h3 class="h4">
+                <a href="${post.link}" class="card-title hover:underline">
+                  ${post.title}
+                </a>
+              </h3>
+              <p class="card-text">
+                ${post.description}
+              </p>
+            </div>
+          </div>
+        </li>`;
+                recentPostsContainer.insertAdjacentHTML("beforeend", postCard);
+              });
+            }
+  
+            loadRecentPosts();
+          </script>
+
+          <button class="btn"><a href="./Categories/Recent_Posts.html">Load more</a>
+          </button>
+          
+        </section>
 
 
 
-
-
-      <!-- 
+        <!-- 
               - #RECENT POSTS
             -->
 
-      <section class="section recent" aria-label="recent post">
+        <!-- <section class="section recent" aria-label="recent post">
         <div class="container">
 
           <div class="title-wrapper">
@@ -171,9 +265,9 @@
             </h2>
           </div>
 
-          <ul class="grid-list">
+          <ul class="grid-list"> -->
 
-            <li>
+        <!-- <li>
               <div class="blog-card">
 
                 <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
@@ -513,8 +607,8 @@
                 </div>
 
               </div>
-            </li>
-
+            </li> -->
+        <!-- 
           </ul>
 
 
@@ -523,632 +617,924 @@
           </button>
 
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-  - #FEATURED POST
-  -->
+      </section> -->
 
       <section class="section featured" aria-label="featured post">
         <div class="container">
-
           <p class="section-subtitle">
-            Get started with our <strong class="strong">best stories</strong>
+            <a href="#">Get started with our <strong class="strong">best stories</strong></a>
           </p>
-
-
-
-
-
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
-                  <img src="./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg" width="500" height="600" loading="lazy"
-                    alt="Investment Strategies for 2024" class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-1.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-2.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li>
-                      <a href="#" class="card-tag">Investing</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Strategy</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">2024 Trends</a>
-                    </li>
-
-                  </ul>
-                  <h2>Investment Strategies for 2024</h2>
-                  <p>Explore the best strategies to maximize your returns in the upcoming year.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
-                  <img src="./assets/images/tyler-prahm-AWI17F-ocGM-unsplash.jpg" width="500" height="600"
-                    loading="lazy" alt="Understanding Stock Market Volatility" class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-1.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-2.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li>
-                      <a href="#" class="card-tag">Volatility</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Market Analysis</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Education</a>
-                    </li>
-
-                  </ul>
-                  <h2>Understanding Stock Market Volatility</h2>
-                  <p>A deep dive into what causes volatility and how investors can navigate it.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
-                  <img src="./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg" width="500" height="600" loading="lazy"
-                    alt="Top 5 ETFs for 2024" class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-1.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-2.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li>
-                      <a href="#" class="card-tag">ETFs</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Investing</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Portfolio</a>
-                    </li>
-
-                  </ul>
-                  <h2>Top 5 ETFs for 2024</h2>
-                  <p>Highlighting the best-performing ETFs to consider for your investment portfolio.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
-                  <img src="./assets/images/tyler-prahm-AWI17F-ocGM-unsplash.jpg" width="500" height="600"
-                    loading="lazy" alt="How to Build a Diversified Portfolio" class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-1.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-2.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li>
-                      <a href="#" class="card-tag">Portfolio Management</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Diversification</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Investing</a>
-                    </li>
-
-                  </ul>
-                  <h2>How to Build a Diversified Portfolio</h2>
-                  <p>Learn strategies to create a balanced and diversified investment portfolio.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
-                  <img src="./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg" width="500" height="600" loading="lazy"
-                    alt="The Impact of Interest Rates on the Stock Market" class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-1.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-2.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li>
-                      <a href="#" class="card-tag">Interest Rates</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Market Impact</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Economics</a>
-                    </li>
-
-                  </ul>
-                  <h2>The Impact of Interest Rates on the Stock Market</h2>
-                  <p>Analyzing how changes in interest rates affect stock market performance.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
-                  <img src="./assets/images/tyler-prahm-AWI17F-ocGM-unsplash.jpg" width="500" height="600"
-                    loading="lazy" alt="Common Mistakes New Investors Make" class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-1.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-2.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li>
-                      <a href="#" class="card-tag">Investing Mistakes</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">New Investors</a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="card-tag">Education</a>
-                    </li>
-
-                  </ul>
-                  <h2>Common Mistakes New Investors Make</h2>
-                  <p>Identifying pitfalls to avoid when starting your investment journey.</p>
-                </div>
-              </div>
-            </li>
-
+      
+          <ul class="has-scrollbar" id="best-stories-list">
+            <script>
+              async function fetchBestStories() {
+  try {
+    const response = await fetch("best-stories.json");
+    const stories = await response.json();
+    const storiesList = document.getElementById("best-stories-list");
+
+    // Populate 6 stories dynamically
+    stories.slice(0, 6).forEach(story => {
+      const storyCard = `
+        <li class="scrollbar-item">
+          <div class="blog-card" onclick="window.location.href='${story.link}';" style="cursor: pointer;">
+            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+              <img src="${story.image}" width="500" height="600" loading="lazy" alt="${story.title}" class="img-cover">
+              <ul class="avatar-list absolute">
+                ${
+                  Array.isArray(story.authorImages)
+                    ? story.authorImages
+                        .map(img => `
+                          <li class="avatar-item">
+                            <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                              <img src="${img}" width="100" height="100" loading="lazy" alt="Author" class="img-cover">
+                            </a>
+                          </li>
+                        `)
+                        .join("")
+                    : ""
+                }
+              </ul>
+            </figure>
+            <div class="card-content">
+              <ul class="card-meta-list">
+                ${story.tags.map(tag => `<li><a href="#" class="card-tag">${tag}</a></li>`).join("")}
+              </ul>
+              <h2>${story.title}</h2>
+              <p>${story.description}</p>
+            </div>
+          </div>
+        </li>
+      `;
+      storiesList.insertAdjacentHTML("beforeend", storyCard);
+    });
+  } catch (error) {
+    console.error("Error fetching best stories:", error);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", fetchBestStories);
+
+            </script>
           </ul>
-
         </div>
-
       </section>
+        <!-- 
+  - #FEATURED POST
+  -->
+<!-- 
+        <section class="section featured" aria-label="featured post">
+          <div class="container">
+            <p class="section-subtitle">
+              Get started with our <strong class="strong">best stories</strong>
+            </p>
 
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 500; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg"
+                      width="500"
+                      height="600"
+                      loading="lazy"
+                      alt="Investment Strategies for 2024"
+                      class="img-cover"
+                    />
 
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-1.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
 
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-2.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
 
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li>
+                        <a href="#" class="card-tag">Investing</a>
+                      </li>
 
+                      <li>
+                        <a href="#" class="card-tag">Strategy</a>
+                      </li>
 
-      <!-- 
+                      <li>
+                        <a href="#" class="card-tag">2024 Trends</a>
+                      </li>
+                    </ul>
+                    <h2>Investment Strategies for 2024</h2>
+                    <p>
+                      Explore the best strategies to maximize your returns in
+                      the upcoming year.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 500; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/tyler-prahm-AWI17F-ocGM-unsplash.jpg"
+                      width="500"
+                      height="600"
+                      loading="lazy"
+                      alt="Understanding Stock Market Volatility"
+                      class="img-cover"
+                    />
+
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-1.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-2.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li>
+                        <a href="#" class="card-tag">Volatility</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Market Analysis</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Education</a>
+                      </li>
+                    </ul>
+                    <h2>Understanding Stock Market Volatility</h2>
+                    <p>
+                      A deep dive into what causes volatility and how investors
+                      can navigate it.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 500; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg"
+                      width="500"
+                      height="600"
+                      loading="lazy"
+                      alt="Top 5 ETFs for 2024"
+                      class="img-cover"
+                    />
+
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-1.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-2.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li>
+                        <a href="#" class="card-tag">ETFs</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Investing</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Portfolio</a>
+                      </li>
+                    </ul>
+                    <h2>Top 5 ETFs for 2024</h2>
+                    <p>
+                      Highlighting the best-performing ETFs to consider for your
+                      investment portfolio.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 500; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/tyler-prahm-AWI17F-ocGM-unsplash.jpg"
+                      width="500"
+                      height="600"
+                      loading="lazy"
+                      alt="How to Build a Diversified Portfolio"
+                      class="img-cover"
+                    />
+
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-1.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-2.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li>
+                        <a href="#" class="card-tag">Portfolio Management</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Diversification</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Investing</a>
+                      </li>
+                    </ul>
+                    <h2>How to Build a Diversified Portfolio</h2>
+                    <p>
+                      Learn strategies to create a balanced and diversified
+                      investment portfolio.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 500; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg"
+                      width="500"
+                      height="600"
+                      loading="lazy"
+                      alt="The Impact of Interest Rates on the Stock Market"
+                      class="img-cover"
+                    />
+
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-1.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-2.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li>
+                        <a href="#" class="card-tag">Interest Rates</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Market Impact</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Economics</a>
+                      </li>
+                    </ul>
+                    <h2>The Impact of Interest Rates on the Stock Market</h2>
+                    <p>
+                      Analyzing how changes in interest rates affect stock
+                      market performance.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 500; --height: 600"
+                  >
+                    <img
+                      src="./assets/images/tyler-prahm-AWI17F-ocGM-unsplash.jpg"
+                      width="500"
+                      height="600"
+                      loading="lazy"
+                      alt="Common Mistakes New Investors Make"
+                      class="img-cover"
+                    />
+
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-1.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-2.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li>
+                        <a href="#" class="card-tag">Investing Mistakes</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">New Investors</a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-tag">Education</a>
+                      </li>
+                    </ul>
+                    <h2>Common Mistakes New Investors Make</h2>
+                    <p>
+                      Identifying pitfalls to avoid when starting your
+                      investment journey.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+
+        <!-- 
    - #RECOMMENDED POST
 -->
 
+        <section class="section recommended" aria-label="recommended post">
+          <div class="container">
+            <p class="section-subtitle">
+              <strong class="strong">Recommended</strong>
+            </p>
 
-      <section class="section recommended" aria-label="recommended post">
-        <div class="container">
+            <ul class="grid-list">
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 300; --height: 360"
+                  >
+                    <img
+                      src="./assets/images/recommended-1.jpg"
+                      width="300"
+                      height="360"
+                      loading="lazy"
+                      alt="The trick to getting more done is to have the freedom to roam around "
+                      class="img-cover"
+                    />
 
-          <p class="section-subtitle">
-            <strong class="strong">Recommended</strong>
-          </p>
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-5.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
 
-          <ul class="grid-list">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-2.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
 
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
-                  <img src="./assets/images/recommended-1.jpg" width="300" height="360" loading="lazy"
-                    alt="The trick to getting more done is to have the freedom to roam around " class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-5.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="#" class="card-title hover:underline">
+                        The trick to getting more done is to have the freedom to
+                        roam around
                       </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-2.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title hover:underline">
-                      The trick to getting more done is to have the freedom to roam around
-                    </a>
-                  </h3>
-
+                    </h3>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 300; --height: 360"
+                  >
+                    <img
+                      src="./assets/images/recommended-2.jpg"
+                      width="300"
+                      height="360"
+                      loading="lazy"
+                      alt="Every day, in every city and town across the country "
+                      class="img-cover"
+                    />
 
-            <li>
-              <div class="blog-card">
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-3.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
 
-                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
-                  <img src="./assets/images/recommended-2.jpg" width="300" height="360" loading="lazy"
-                    alt="Every day, in every city and town across the country " class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-3.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="#" class="card-title hover:underline">
+                        Every day, in every city and town across the country
                       </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title hover:underline">
-                      Every day, in every city and town across the country
-                    </a>
-                  </h3>
-
+                    </h3>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 300; --height: 360"
+                  >
+                    <img
+                      src="./assets/images/recommended-3.jpg"
+                      width="300"
+                      height="360"
+                      loading="lazy"
+                      alt="I work best when my space is filled with inspiration "
+                      class="img-cover"
+                    />
 
-            <li>
-              <div class="blog-card">
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-1.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
 
-                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
-                  <img src="./assets/images/recommended-3.jpg" width="300" height="360" loading="lazy"
-                    alt="I work best when my space is filled with inspiration " class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-1.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="#" class="card-title hover:underline">
+                        I work best when my space is filled with inspiration
                       </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title hover:underline">
-                      I work best when my space is filled with inspiration
-                    </a>
-                  </h3>
-
+                    </h3>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 300; --height: 360"
+                  >
+                    <img
+                      src="./assets/images/recommended-4.jpg"
+                      width="300"
+                      height="360"
+                      loading="lazy"
+                      alt="I have my own definition of minimalism "
+                      class="img-cover"
+                    />
 
-            <li>
-              <div class="blog-card">
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-4.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
 
-                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
-                  <img src="./assets/images/recommended-4.jpg" width="300" height="360" loading="lazy"
-                    alt="I have my own definition of minimalism " class="img-cover">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-3.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
 
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-4.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="#" class="card-title hover:underline">
+                        I have my own definition of minimalism
                       </a>
-                    </li>
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-3.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
-                      </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title hover:underline">
-                      I have my own definition of minimalism
-                    </a>
-                  </h3>
-
+                    </h3>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 300; --height: 360"
+                  >
+                    <img
+                      src="./assets/images/recommended-5.jpg"
+                      width="300"
+                      height="360"
+                      loading="lazy"
+                      alt="Change your look and your attitude "
+                      class="img-cover"
+                    />
 
-            <li>
-              <div class="blog-card">
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-6.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
 
-                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
-                  <img src="./assets/images/recommended-5.jpg" width="300" height="360" loading="lazy"
-                    alt="Change your look and your attitude " class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-6.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="#" class="card-title hover:underline">
+                        Change your look and your attitude
                       </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title hover:underline">
-                      Change your look and your attitude
-                    </a>
-                  </h3>
-
+                    </h3>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 300; --height: 360"
+                  >
+                    <img
+                      src="./assets/images/recommended-6.jpg"
+                      width="300"
+                      height="360"
+                      loading="lazy"
+                      alt="The difference is quality "
+                      class="img-cover"
+                    />
 
-            <li>
-              <div class="blog-card">
+                    <ul class="avatar-list absolute">
+                      <li class="avatar-item">
+                        <a
+                          href="#"
+                          class="avatar img-holder"
+                          style="--width: 100; --height: 100"
+                        >
+                          <img
+                            src="./assets/images/author-3.jpg"
+                            width="100"
+                            height="100"
+                            loading="lazy"
+                            alt="Author"
+                            class="img-cover"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </figure>
 
-                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
-                  <img src="./assets/images/recommended-6.jpg" width="300" height="360" loading="lazy"
-                    alt="The difference is quality " class="img-cover">
-
-                  <ul class="avatar-list absolute">
-
-                    <li class="avatar-item">
-                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                        <img src="./assets/images/author-3.jpg" width="100" height="100" loading="lazy" alt="Author"
-                          class="img-cover">
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="#" class="card-title hover:underline">
+                        The difference is quality
                       </a>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h5">
-                    <a href="#" class="card-title hover:underline">
-                      The difference is quality
-                    </a>
-                  </h3>
-
+                    </h3>
+                  </div>
                 </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-      <!--
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        
+        
+        <!--
         - #NEWSLETTER
       -->
 
-      <section class="section newsletter">
+        <section class="section newsletter">
+          <h2 class="h2 section-title">
+            Subscribe to <strong class="strong">new posts</strong>
+          </h2>
 
-        <h2 class="h2 section-title">
-          Subscribe to <strong class="strong">new posts</strong>
-        </h2>
+          <form action="" class="newsletter-form">
+            <input
+              type="email"
+              name="email_address"
+              placeholder="Your email address"
+              required
+              class="email-field"
+            />
 
-        <form action="" class="newsletter-form">
-          <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </section>
+      </article>
+    </main>
 
-          <button type="submit" class="btn">Subscribe</button>
-        </form>
+    <!--Dynamic Footer-->
 
-      </section>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
 
-    </article>
-  </main>
-
-
-
-
-<!--Dynamic Footer-->
-
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch('/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
-  
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="back-to-top" id="backToTop">
+      <span>&uarr;</span>
+      <!-- Using an up arrow symbol instead of material icons -->
+    </a>
 
-  <!-- BACK TO TOP BUTTON -->
-  <a href="#" class="back-to-top" id="backToTop">
-    <span>&uarr;</span> <!-- Using an up arrow symbol instead of material icons -->
-  </a>
+    <script>
+      // Function to toggle visibility of the "Back to Top" button
+      window.addEventListener("scroll", function () {
+        let backToTopButton = document.getElementById("backToTop");
 
-
-  <script>
-
-    // Function to toggle visibility of the "Back to Top" button
-    window.addEventListener("scroll", function () {
-      let backToTopButton = document.getElementById("backToTop");
-
-      if (window.scrollY > 100) { // Check if scroll is over 100px
-        backToTopButton.style.display = "flex"; // Show button
-      } else {
-        backToTopButton.style.display = "none"; // Hide button
-      }
-    });
-  </script>
-
- 
-</body>
-
+        if (window.scrollY > 100) {
+          // Check if scroll is over 100px
+          backToTopButton.style.display = "flex"; // Show button
+        } else {
+          backToTopButton.style.display = "none"; // Hide button
+        }
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,135 @@
+[
+  {
+    "title": "12th Post Title",
+    "description": "This is the description for the 10th post...",
+    "image": "assets/images/post10.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post10.html"
+  },
+  {
+    "title": "11th Post Title",
+    "description": "This is the description for the 9th post...",
+    "image": "assets/images/post9.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post9.html"
+  },
+  {
+    "title": "10th Post Title",
+    "description": "This is the description for the 8th post...",
+    "image": "assets/images/post8.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post8.html"
+  },
+
+  {
+    "title": "9th Post Title",
+    "description": "This is the description for the 10th post...",
+    "image": "assets/images/post10.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post10.html"
+  },
+  {
+    "title": "8th Post Title",
+    "description": "This is the description for the 9th post...",
+    "image": "assets/images/post9.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post9.html"
+  },
+  {
+    "title": "7th Post Title",
+    "description": "This is the description for the 8th post...",
+    "image": "assets/images/post8.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post8.html"
+  },
+
+  {
+    "title": "BharatPe Investment App: Your Easy Guide to Smart Investing",
+    "description": "BharatPe’s new “Invest BharatPe” app offers secure and easy investment options...",
+    "image": "assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#SmartInvesting"],
+    "link": "/posts/bharatpe-investment-app.html"
+  },
+  {
+    "title": "How to Start Investing in Mutual Funds",
+    "description": "Learn how to invest in mutual funds step-by-step with our beginner-friendly guide...",
+    "image": "assets/images/mutual-funds.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#MutualFunds"],
+    "link": "/posts/mutual-funds.html"
+  },
+
+  {
+    "title": "6th Post Title",
+    "description": "This is the description for the 10th post...",
+    "image": "assets/images/post10.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post10.html"
+  },
+  {
+    "title": "5th Post Title",
+    "description": "This is the description for the 9th post...",
+    "image": "assets/images/post9.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post9.html"
+  },
+  {
+    "title": "4th Post Title",
+    "description": "This is the description for the 8th post...",
+    "image": "assets/images/post8.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post8.html"
+  },
+
+  {
+    "title": "3rd Post Title",
+    "description": "This is the description for the 10th post...",
+    "image": "assets/images/post10.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post10.html"
+  },
+  {
+    "title": "2nd Post Title",
+    "description": "This is the description for the 9th post...",
+    "image": "assets/images/post9.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post9.html"
+  },
+  {
+    "title": "1st Post Title",
+    "description": "This is the description for the 8th post...",
+    "image": "assets/images/post8.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/post8.html"
+  },
+
+  {
+    "title": "BharatPe Investment App: Your Easy Guide to Smart Investing",
+    "description": "BharatPe’s new “Invest BharatPe” app offers secure and easy investment options...",
+    "image": "assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#SmartInvesting"],
+    "link": "/posts/bharatpe-investment-app.html"
+  },
+  {
+    "title": "How to Start Investing in Mutual Funds",
+    "description": "Learn how to invest in mutual funds step-by-step with our beginner-friendly guide...",
+    "image": "assets/images/mutual-funds.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "tags": ["#MutualFunds"],
+    "link": "/posts/mutual-funds.html"
+  }
+]

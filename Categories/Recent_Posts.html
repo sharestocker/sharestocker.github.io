@@ -24,6 +24,7 @@
     - custom css link
   -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/Categories/pagination.css" />
 
     <!-- 
     - google font link
@@ -133,12 +134,32 @@
 
     <div class="overlay" data-overlay data-search-toggler></div>
 
+
+
+    <section class="section recent-posts" aria-label="recent post">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2 class="h2 section-title">
+            All <strong class="strong">Recent Posts</strong>
+          </h2>
+        </div>
+        <br>
+        <ul class="grid-list" id="recent-posts"></ul>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+    
+    <script src="/Categories/pagination.js"></script>
+    
+
+
+
     <!-- 
               - #RECENT POSTS
             -->
 
-    <section class="section recent" aria-label="recent post">
-      <div class="container">
+    <!-- <section class="section recent" aria-label="recent post">
+      <div class="container"> -->
         <!-- <div class="title-wrapper">
         
                     <h2 class="h2 section-title">
@@ -148,7 +169,7 @@
                   
                   -->
 
-        <div class="title-wrapper">
+        <!-- <div class="title-wrapper">
           <h2 class="h2 section-title">Recent <strong>Posts</strong></h2>
         </div>
 
@@ -604,12 +625,12 @@
               </div>
             </div>
           </li>
-        </ul>
+        </ul> -->
 
         <!-- <button class="btn"><a href="./Categories/Recent_Posts.html">Load more</a>
                 </button> -->
-      </div>
-    </section>
+      <!-- </div>
+    </section> -->
 
     <!--Dynamic Footer-->
 

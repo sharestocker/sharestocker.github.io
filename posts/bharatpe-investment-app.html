@@ -266,8 +266,59 @@
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
-
+  
   <hr class="short-line">
+  <section class="section related-stories" aria-label="related stories">
+    <div class="container">
+      <h2 class="h2 section-title">You May Also Like</h2>
+      <br>
+      <ul class="grid-list" id="best-stories-list">
+        <!-- Related stories will be dynamically added here -->
+        <script>
+  async function fetchRelatedStories() {
+  const response = await fetch("../best-stories.json");
+  const stories = await response.json();
+  const relatedList = document.getElementById("best-stories-list");
+
+  if (!relatedList) {
+    console.error("Error: Element with id 'best-stories-list' not found.");
+    return;
+  }
+
+  // Randomly select 3 stories
+  const randomStories = stories.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+  randomStories.forEach(story => {
+    const storyCard = `
+      <li>
+        <div class="blog-card" onclick="window.location.href='${story.link}';" style="cursor: pointer;">
+          <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+            <img src="${story.image}" width="500" height="600" loading="lazy" alt="${story.title}" class="img-cover">
+          </figure>
+          <div class="card-content">
+            <ul class="card-meta-list">
+              ${story.tags.map(tag => `<li><a href="#" class="card-tag">${tag}</a></li>`).join('')}
+            </ul>
+            <h2>${story.title}</h2>
+            <p>${story.description}</p>
+          </div>
+        </div>
+      </li>
+    `;
+    relatedList.insertAdjacentHTML("beforeend", storyCard);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", fetchRelatedStories);
+
+</script>
+
+        </script>
+        
+      </ul>
+    </div>
+  </section>
+  
 
 
   <!-- 
