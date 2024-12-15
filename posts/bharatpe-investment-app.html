@@ -270,13 +270,15 @@
   
   <hr class="short-line">
 
-  <section class="section related-stories" aria-label="related stories">
+  <div id="best-stories-placeholder"></div>
+
+  <!-- <section class="section related-stories" aria-label="related stories">
     <div class="container">
       <h2 class="h2 section-title">You May Also Like</h2>
       <br>
-      <ul class="grid-list" id="best-stories-list">
-        <!-- Related stories will be dynamically added here -->
-<script>
+      <ul class="grid-list" id="best-stories-list"> 
+        Related stories will be dynamically added here 
+         <script>
   async function fetchRelatedStories() {
   const response = await fetch("../best-stories.json");
   const stories = await response.json();
@@ -313,7 +315,7 @@
 
 document.addEventListener("DOMContentLoaded", fetchRelatedStories);
 
-</script>
+</script> -->
 
 
         
