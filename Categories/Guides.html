@@ -33,10 +33,63 @@
 </head>
 
 <body>
+  <div id="header-placeholder"></div>
+
+  <script>
+    fetch("../header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header-placeholder").innerHTML = data;
+  
+        // Reinitialize scripts for dynamic content
+        const addEventOnElem = function (elem, type, callback) {
+          if (elem.length > 1) {
+            for (let i = 0; i < elem.length; i++) {
+              elem[i].addEventListener(type, callback);
+            }
+          } else {
+            elem.addEventListener(type, callback);
+          }
+        };
+  
+        const navbar = document.querySelector("[data-navbar]");
+        const navbarLinks = document.querySelectorAll("[data-nav-link]");
+        const navToggler = document.querySelector("[data-nav-toggler]");
+  
+        const toggleNavbar = function () {
+          navbar.classList.toggle("active");
+          this.classList.toggle("active");
+        };
+  
+        addEventOnElem(navToggler, "click", toggleNavbar);
+  
+        const closeNavbar = function () {
+          navbar.classList.remove("active");
+          navToggler.classList.remove("active");
+        };
+  
+        addEventOnElem(navbarLinks, "click", closeNavbar);
+  
+        const searchBar = document.querySelector("[data-search-bar]");
+        const searchTogglers = document.querySelectorAll("[data-search-toggler]");
+        const overlay = document.querySelector("[data-overlay]");
+  
+        const toggleSearchBar = function () {
+          searchBar.classList.toggle("active");
+          overlay.classList.toggle("active");
+          document.body.classList.toggle("active");
+        };
+  
+        addEventOnElem(searchTogglers, "click", toggleSearchBar);
+      })
+      .catch((error) => console.error("Error loading header:", error));
+  </script>
+
+
 
   <!-- 
     - #HEADER
-  -->
+  
 
   <header class="header section" data-header>
     <div class="container">
@@ -51,10 +104,10 @@
           <li class="navbar-item">
             <a href="/" class="navbar-link hover:underline" data-nav-link>Home</a>
           </li>
-<!-- 
+ 
           <li class="navbar-item">
             <a href="/Categories/Recent_Posts.html" class="navbar-link hover:underline" data-nav-link>Recent Posts</a>
-          </li> -->
+          </li> -
 
           <li class="navbar-item">
             <a href="/Categories/Guides.html" class="navbar-link hover:underline" data-nav-link>Guides</a>
@@ -81,7 +134,7 @@
           <span class="span three"></span>
         </button>
 
-        <!-- <a href="#" class="btn">Join</a> -->
+        <a href="#" class="btn">Join</a>
 
       </div>
 
@@ -93,9 +146,9 @@
 
   
 
-  <!-- 
+  
     - #SEARCH BAR
-  -->
+  
 
   <div class="search-bar" data-search-bar>
 
@@ -112,7 +165,7 @@
 
   </div>
 
-  <div class="overlay" data-overlay data-search-toggler></div>
+  <div class="overlay" data-overlay data-search-toggler></div> -->
 
 
   

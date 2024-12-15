@@ -45,13 +45,14 @@
 
 
 <body>
-
+  <!-- Dynamic Header -->
+  <div id="header-placeholder"></div>
 
 
 
   <!-- 
           - #HEADER
-        -->
+        
 
   <header class="header section" data-header>
     <div class="container">
@@ -67,10 +68,10 @@
             <a href="/" class="navbar-link hover:underline" data-nav-link>Home</a>
           </li>
 
-          <!-- 
+          
           <li class="navbar-item">
             <a href="/Categories/Recent_Posts.html" class="navbar-link hover:underline" data-nav-link>Recent Posts</a>
-          </li> -->
+          </li> 
 
           <li class="navbar-item">
             <a href="/Categories/Guides.html" class="navbar-link hover:underline" data-nav-link>Guides</a>
@@ -97,7 +98,7 @@
           <span class="span three"></span>
         </button>
 
-        <!-- <a href="#" class="btn">Join</a> -->
+        <a href="#" class="btn">Join</a> 
 
       </div>
 
@@ -106,9 +107,9 @@
 
 
 
-  <!-- 
-          - #SEARCH BAR
-        -->
+  
+    - #SEARCH BAR
+        
 
   <div class="search-bar" data-search-bar>
 
@@ -123,7 +124,7 @@
 
     <p class="search-bar-text">Please enter at least 3 characters</p>
 
-  </div>
+  </div>-->
 
   <div class="overlay" data-overlay data-search-toggler></div>
 
@@ -268,13 +269,14 @@
   </div>
   
   <hr class="short-line">
+
   <section class="section related-stories" aria-label="related stories">
     <div class="container">
       <h2 class="h2 section-title">You May Also Like</h2>
       <br>
       <ul class="grid-list" id="best-stories-list">
         <!-- Related stories will be dynamically added here -->
-        <script>
+<script>
   async function fetchRelatedStories() {
   const response = await fetch("../best-stories.json");
   const stories = await response.json();
@@ -313,7 +315,7 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
 
 </script>
 
-        </script>
+
         
       </ul>
     </div>
@@ -323,7 +325,6 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
 
   <!-- 
     - #FOOTER
-  -->
 
   <footer class="footer">
     <div class="container">
@@ -394,9 +395,9 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
             <a href="/contact.html" class="footer-link hover:underline">Contact</a>
           </li>
 
-          <!-- <li>
+           <li>
             <a href="#" class="footer-link hover:underline">404</a>
-          </li> -->
+          </li>
 
           <li>
             <a href="/privacy-policy.html" class="footer-link hover:underline">Privacy Policy</a>
@@ -410,9 +411,9 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
             <p class="h5">Tools</p>
           </li>
 
-          <!-- <li>
+          <li>
             <a href="#" class="footer-link hover:underline">Upcoming Events</a>
-          </li> -->
+          </li> 
 
           <li>
             <a href="#" class="footer-link hover:underline">SIP Calculator</a>
@@ -426,9 +427,9 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
             <a href="#" class="footer-link hover:underline">EMI Calculator</a>
           </li>
 
-          <!--<li>
+          <<li>
             <a href="#" class="footer-link hover:underline">Testimonial</a>
-          </li> -->
+          </li> 
 
         </ul>
 
@@ -461,9 +462,9 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
             </a>
           </li>
 
-          <!--<li>
+          <li>
             <a href="#" class="footer-link hover:underline" target="_blank">Authors</a>
-          </li>  -->
+          </li> 
 
         </ul>
 
@@ -472,7 +473,7 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
 
       <hr class="short-line">
 
-      <!-- Disclaimer-->
+       Disclaimer
       <div
         style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 13px; color: #555; margin-top: 20px; margin-bottom: 10px; margin-left: 20px; margin-right: 20px;">
 
@@ -512,16 +513,17 @@ document.addEventListener("DOMContentLoaded", fetchRelatedStories);
       <div class="section footer-bottom">
 
         <p class="copyright">
-          <!-- Published by <a href="#" class="copyright-link hover:underline">Made with Love in India</a>. -->
+           Published by <a href="#" class="copyright-link hover:underline">Made with Love in India</a>. 
           Made with Love in India &copy; sharestocker 2024.
         </p>
 
       </div>
 
     </div>
-  </footer>
+  </footer>-->
 
-
+  <!--Dynamic Footer-->
+  <div id="footer-placeholder"></div>
 
   <!-- 
     - custom js link

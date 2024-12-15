@@ -33,10 +33,12 @@
 </head>
 
 <body>
+  <!-- Dynamic Header -->
+  <div id="header-placeholder"></div>
 
   <!-- 
     - #HEADER
-  -->
+  
 
   <header class="header section" data-header>
     <div class="container">
@@ -51,10 +53,10 @@
           <li class="navbar-item">
             <a href="/" class="navbar-link hover:underline" data-nav-link>Home</a>
           </li>
-<!-- 
+
           <li class="navbar-item">
             <a href="#" class="navbar-link hover:underline" data-nav-link>Recent Posts</a>
-          </li> -->
+          </li> 
 
           <li class="navbar-item">
             <a href="/Categories/Guides.html" class="navbar-link hover:underline" data-nav-link>Guides</a>
@@ -81,21 +83,16 @@
           <span class="span three"></span>
         </button>
 
-        <!-- <a href="#" class="btn">Join</a> -->
+        <a href="#" class="btn">Join</a> 
 
       </div>
 
     </div>
   </header>
 
-
-
-
   
-
-  <!-- 
     - #SEARCH BAR
-  -->
+  
 
   <div class="search-bar" data-search-bar>
 
@@ -110,7 +107,7 @@
 
     <p class="search-bar-text">Please enter at least 3 characters</p>
 
-  </div>
+  </div>-->
 
   <div class="overlay" data-overlay data-search-toggler></div>
 
@@ -158,17 +155,7 @@
     
 
     <!--Dynamic Footer-->
-
-  <div id="footer-placeholder"></div>
-  <script>
-    fetch('/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
-  
+    <div id="footer-placeholder"></div>  
 
 
   <!-- 

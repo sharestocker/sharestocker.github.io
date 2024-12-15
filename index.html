@@ -43,9 +43,12 @@
   </head>
 
   <body>
+    <!-- Dynamic Header -->
+    <div id="header-placeholder"></div>
+
     <!-- 
     - #HEADER
-  -->
+  
 
     <header class="header section" data-header>
       <div class="container">
@@ -66,9 +69,9 @@
               >
             </li>
 
-            <!-- <li class="navbar-item">
+           <li class="navbar-item">
             <a href="./Categories/Recent_Posts.html" class="navbar-link hover:underline" data-nav-link>Recent Posts</a>
-          </li> -->
+          </li> 
 
             <li class="navbar-item">
               <a
@@ -107,14 +110,14 @@
             <span class="span three"></span>
           </button>
 
-          <!-- <a href="#" class="btn">Join</a> -->
+         <a href="#" class="btn">Join</a> 
         </div>
       </div>
     </header>
 
-    <!-- 
+    
     - #SEARCH BAR
-  -->
+  
 
     <div class="search-bar" data-search-bar>
       <div class="input-wrapper">
@@ -135,7 +138,7 @@
       </div>
 
       <p class="search-bar-text">Please enter at least 3 characters</p>
-    </div>
+    </div>-->
 
     <div class="overlay" data-overlay data-search-toggler></div>
 
@@ -174,6 +177,10 @@
           </div>
         </section>
 
+        <!-- 
+              - #RECENT POSTS
+            -->
+
         <section class="section recent" aria-label="recent post">
           <div class="container">
             <div class="title-wrapper">
@@ -188,14 +195,14 @@
             async function loadRecentPosts() {
               const response = await fetch("./posts.json"); // Adjust path as needed
               const posts = await response.json();
-  
+
               const recentPostsContainer =
                 document.getElementById("recent-posts");
               recentPostsContainer.innerHTML = ""; // Clear existing content
-  
+
               // Get the 6 most recent posts
               const latestPosts = posts.slice(0, 6); // Assuming posts are sorted in descending order
-  
+
               latestPosts.forEach((post) => {
                 const postCard = `
         <li>
@@ -240,22 +247,17 @@
                 recentPostsContainer.insertAdjacentHTML("beforeend", postCard);
               });
             }
-  
+
             loadRecentPosts();
           </script>
 
-          <button class="btn"><a href="./Categories/Recent_Posts.html">Load more</a>
+          <button class="btn">
+            <a href="./Categories/Recent_Posts.html">Load more</a>
           </button>
-          
         </section>
 
-
-
-        <!-- 
-              - #RECENT POSTS
-            -->
-
-        <!-- <section class="section recent" aria-label="recent post">
+        <!--       
+        <section class="section recent" aria-label="recent post">
         <div class="container">
 
           <div class="title-wrapper">
@@ -265,9 +267,9 @@
             </h2>
           </div>
 
-          <ul class="grid-list"> -->
+          <ul class="grid-list"> 
 
-        <!-- <li>
+        <li>
               <div class="blog-card">
 
                 <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
@@ -607,8 +609,8 @@
                 </div>
 
               </div>
-            </li> -->
-        <!-- 
+            </li>
+         
           </ul>
 
 
@@ -619,38 +621,53 @@
         </div>
       </section> -->
 
-      <section class="section featured" aria-label="featured post">
-        <div class="container">
-          <p class="section-subtitle">
-            <a href="#">Get started with our <strong class="strong">best stories</strong></a>
-          </p>
-      
-          <ul class="has-scrollbar" id="best-stories-list">
-            <script>
-              async function fetchBestStories() {
-  try {
-    const response = await fetch("best-stories.json");
-    const stories = await response.json();
-    const storiesList = document.getElementById("best-stories-list");
+        <!-- 
+  - #BEST-STORIES
+  -->
+        <section class="section featured" aria-label="featured post">
+          <div class="container">
+            <p class="section-subtitle">
+              <a href="#"
+                >Get started with our
+                <strong class="strong">best stories</strong></a
+              >
+            </p>
 
-    // Populate 6 stories dynamically
-    stories.slice(0, 6).forEach(story => {
-      const storyCard = `
+            <ul class="has-scrollbar" id="best-stories-list">
+              <script>
+                async function fetchBestStories() {
+                  try {
+                    const response = await fetch("best-stories.json");
+                    const stories = await response.json();
+                    const storiesList =
+                      document.getElementById("best-stories-list");
+
+                    // Populate 6 stories dynamically
+                    stories.slice(0, 6).forEach((story) => {
+                      const storyCard = `
         <li class="scrollbar-item">
-          <div class="blog-card" onclick="window.location.href='${story.link}';" style="cursor: pointer;">
+          <div class="blog-card" onclick="window.location.href='${
+            story.link
+          }';" style="cursor: pointer;">
             <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
-              <img src="${story.image}" width="500" height="600" loading="lazy" alt="${story.title}" class="img-cover">
+              <img src="${
+                story.image
+              }" width="500" height="600" loading="lazy" alt="${
+                        story.title
+                      }" class="img-cover">
               <ul class="avatar-list absolute">
                 ${
                   Array.isArray(story.authorImages)
                     ? story.authorImages
-                        .map(img => `
+                        .map(
+                          (img) => `
                           <li class="avatar-item">
                             <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
                               <img src="${img}" width="100" height="100" loading="lazy" alt="Author" class="img-cover">
                             </a>
                           </li>
-                        `)
+                        `
+                        )
                         .join("")
                     : ""
                 }
@@ -658,7 +675,11 @@
             </figure>
             <div class="card-content">
               <ul class="card-meta-list">
-                ${story.tags.map(tag => `<li><a href="#" class="card-tag">${tag}</a></li>`).join("")}
+                ${story.tags
+                  .map(
+                    (tag) => `<li><a href="#" class="card-tag">${tag}</a></li>`
+                  )
+                  .join("")}
               </ul>
               <h2>${story.title}</h2>
               <p>${story.description}</p>
@@ -666,23 +687,20 @@
           </div>
         </li>
       `;
-      storiesList.insertAdjacentHTML("beforeend", storyCard);
-    });
-  } catch (error) {
-    console.error("Error fetching best stories:", error);
-  }
-}
+                      storiesList.insertAdjacentHTML("beforeend", storyCard);
+                    });
+                  } catch (error) {
+                    console.error("Error fetching best stories:", error);
+                  }
+                }
 
-document.addEventListener("DOMContentLoaded", fetchBestStories);
+                document.addEventListener("DOMContentLoaded", fetchBestStories);
+              </script>
+            </ul>
+          </div>
+        </section>
 
-            </script>
-          </ul>
-        </div>
-      </section>
         <!-- 
-  - #FEATURED POST
-  -->
-<!-- 
         <section class="section featured" aria-label="featured post">
           <div class="container">
             <p class="section-subtitle">
@@ -1153,6 +1171,55 @@ document.addEventListener("DOMContentLoaded", fetchBestStories);
               <strong class="strong">Recommended</strong>
             </p>
 
+            <ul class="grid-list"></ul>
+          </div>
+        </section>
+        <script>
+          // Fetch the JSON data
+          fetch("recommended.json")
+            .then((response) => response.json())
+            .then((data) => {
+              const recommendedSection = document.querySelector(
+                ".recommended .grid-list"
+              );
+
+              // Limit to 6 latest posts
+              const limitedData = data.slice(0, 6);
+
+              limitedData.forEach((post) => {
+                const listItem = document.createElement("li");
+
+                listItem.innerHTML = `
+        <div class="blog-card">
+          <a href="${post.link}">
+            <figure class="card-banner img-holder" style="--width: 300; --height: 360">
+              <img src="${post.image}" alt="${post.title}" class="img-cover" style="width: 100%; height: 100%; object-fit: cover;">
+              <ul class="avatar-list absolute">
+                </ul>
+            </figure>
+          </a>
+          <div class="card-content">
+            <h3 class="h5">
+              <a href="${post.link}" class="card-title hover:underline">${post.title}</a>
+            </h3>
+          </div>
+        </div>
+      `;
+
+                recommendedSection.appendChild(listItem);
+              });
+            })
+            .catch((error) => {
+              console.error("Error fetching JSON data:", error);
+            });
+        </script>
+
+        <!-- <section class="section recommended" aria-label="recommended post">
+          <div class="container">
+            <p class="section-subtitle">
+              <strong class="strong">Recommended</strong>
+            </p>
+
             <ul class="grid-list">
               <li>
                 <div class="blog-card">
@@ -1460,10 +1527,8 @@ document.addEventListener("DOMContentLoaded", fetchBestStories);
               </li>
             </ul>
           </div>
-        </section>
-        
-        
-        
+        </section> -->
+
         <!--
         - #NEWSLETTER
       -->
@@ -1489,16 +1554,7 @@ document.addEventListener("DOMContentLoaded", fetchBestStories);
     </main>
 
     <!--Dynamic Footer-->
-
     <div id="footer-placeholder"></div>
-    <script>
-      fetch("/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading footer:", error));
-    </script>
 
     <!-- 
     - custom js link

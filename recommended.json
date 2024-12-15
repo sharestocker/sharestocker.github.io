@@ -1,0 +1,44 @@
+[
+  {
+    "title": "BharatPe Investment App: Your Easy Guide to Smart Investing",
+    "image": "assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "authorImage": "./assets/images/Author.png",
+    "link": "/posts/bharatpe-investment-app.html"
+  },
+  {
+    "title": "The Art of Minimalist Living",
+    "image": "assets/images/post1.jpg",
+    "authorImage": "./assets/images/Author1.png",
+    "link": "/posts/minimalist-living.html"
+  },
+  {
+    "title": "Mastering the Art of Time Management",
+    "image": "assets/images/post2.jpg",
+    "authorImage": "./assets/images/Author2.png",
+    "link": "/posts/time-management.html"
+  },
+  {
+    "title": "The Power of Positive Thinking",
+    "image": "assets/images/post3.jpg",
+    "authorImage": "./assets/images/Author3.png",
+    "link": "/posts/positive-thinking.html"
+  },
+  {
+    "title": "How to Build Strong Relationships",
+    "image": "assets/images/post4.jpg",
+    "authorImage": "./assets/images/Author4.png",
+    "link": "/posts/strong-relationships.html"
+  },
+  {
+    "title": "The Benefits of Meditation and Mindfulness",
+    "image": "assets/images/post5.jpg",
+    "authorImage": "./assets/images/Author5.png",
+    "link": "/posts/meditation-mindfulness.html"
+  },
+  {
+    "title": "The Importance of Setting Goals and Achieving Them",
+    "image": "assets/images/post6.jpg",
+    "authorImage": "./assets/images/Author6.png",
+    "link": "/posts/goal-setting.html"
+  }
+]
