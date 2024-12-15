@@ -14,7 +14,7 @@ const addEventOnElem = function (elem, type, callback) {
 // Load dynamic footer
 const loadDynamicFooter = async () => {
   try {
-    const response = await fetch("footer.html");
+    const response = await fetch("/footer.html");
     if (!response.ok) throw new Error("Failed to load footer");
 
     const footerHTML = await response.text();
@@ -29,7 +29,7 @@ const loadDynamicFooter = async () => {
 // Load dynamic header
 const loadDynamicHeader = async () => {
   try {
-    const response = await fetch("header.html");
+    const response = await fetch("/header.html");
     if (!response.ok) throw new Error("Failed to load header");
 
     const headerHTML = await response.text();
