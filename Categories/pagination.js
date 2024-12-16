@@ -27,13 +27,7 @@ function renderPosts(posts) {
           <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
             <img src="${post.image}" width="550" height="660" loading="lazy"
               alt="${post.title}" class="img-cover" onclick="window.location.href='${post.link}';" style="cursor: pointer;">
-            <ul class="avatar-list absolute">
-              <li class="avatar-item">
-                <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
-                  <img src="${post.authorImage}" width="100" height="100" loading="lazy" alt="Author" class="img-cover">
-                </a>
-              </li>
-            </ul>
+          
           </figure>
           <div class="card-content">
             <ul class="card-meta-list">
