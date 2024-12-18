@@ -151,49 +151,27 @@
         <section class="section hero" aria-label="home">
           <div class="container">
             <h1 class="h1 hero-title">
-              <strong class="strong" id="typewriter-strong">
-                Ready to level up your financial knowledge?
-              </strong>
-              <span
-                id="typewriter-text"
-                style="
-                  display: none;
-                  opacity: 0;
-                  transition: opacity 1s ease-in-out;
-                "
-                >Get latest stories, and market insights.</span
+              <strong class="strong"
+                >Ready to level up your financial knowledge?</strong
               >
+              Stay ahead with the latest stories, and market insights.
             </h1>
+            <!-- <div class="wrapper">
+      <form action="" class="newsletter-form">
+        <input
+          type="email"
+          name="email_address"
+          placeholder="Your email address"
+          class="email-field"
+        />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <p class="newsletter-text">
+        Get the email newsletter and unlock access to exclusive content
+        and updates
+      </p>
+    </div> -->
           </div>
-
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const strongText = "Ready to level up your financial knowledge?";
-              const strongElement =
-                document.getElementById("typewriter-strong");
-              const textElement = document.getElementById("typewriter-text");
-
-              let strongIndex = 0;
-
-              function typeStrong() {
-                if (strongIndex < strongText.length) {
-                  strongElement.textContent += strongText[strongIndex];
-                  strongIndex++;
-                  setTimeout(typeStrong, 100);
-                } else {
-                  // Slide up effect for the remaining text
-                  textElement.style.display = "block";
-                  setTimeout(() => {
-                    textElement.style.opacity = 1;
-                  }, 500);
-                }
-              }
-
-              // Start typing animation
-              strongElement.textContent = "";
-              typeStrong();
-            });
-          </script>
         </section>
 
         <!-- 
@@ -1563,7 +1541,7 @@
         </section> -->
       </article>
     </main>
-    <hr class="short-line">
+    <hr class="short-line" />
 
     <!--Dynamic Footer-->
     <div id="footer-placeholder"></div>
