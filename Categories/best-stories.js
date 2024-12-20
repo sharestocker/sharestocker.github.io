@@ -80,10 +80,8 @@ function setupPagination(stories) {
       renderBestStories(stories);
       setupPagination(stories);
 
-      // Scroll to the top of the section
-      document.querySelector(".section.recent-posts").scrollIntoView({
-        behavior: "smooth",
-      });
+      // Scroll to the top of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     paginationContainer.appendChild(button);
@@ -91,3 +89,4 @@ function setupPagination(stories) {
 }
 // Initialize on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", fetchBestStories);
+
