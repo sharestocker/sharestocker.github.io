@@ -1,52 +1,149 @@
 [
-    {
-        "title": "3rd Post Title",
-        "description": "This is the description for the 10th post...",
-        "image": "assets/images/post10.jpg",
-        "tags": ["#ExampleTag"],
-        "link": "/posts/bharatpe-investment-app.html"
-      },
-    {
-        "title": "Investment Strategies for 2024",
-        "description": "Explore the best strategies to maximize your returns in the upcoming year.",
-        "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
-        "tags": ["Investing", "Strategy", "2024 Trends"],
-        "link": "/posts/investment-strategies-2024.html"
-      },
-      {
-        "title": "The Art of Saving Money",
-        "description": "Learn how to save more effectively for your future.",
-        "image": "./assets/images/saving-money.jpg",
-        "tags": ["Savings", "Finance", "Tips"],
-        "link": "/posts/art-of-saving-money.html"
-      },
-      {
-        "title": "Building Wealth Over Time",
-        "description": "Understand how to build wealth through consistent investing.",
-        "image": "./assets/images/building-wealth.jpg",
-        "tags": ["Wealth", "Investing", "Long-Term"],
-        "link": "/posts/building-wealth-over-time.html"
-      },
-    {
-      "title": "Investment Strategies for 2024",
-      "description": "Explore the best strategies to maximize your returns in the upcoming year.",
-      "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
-      "tags": ["Investing", "Strategy", "2024 Trends"],
-      "link": "/posts/investment-strategies-2024.html"
-    },
-    {
-      "title": "The Art of Saving Money",
-      "description": "Learn how to save more effectively for your future.",
-      "image": "./assets/images/saving-money.jpg",
-      "tags": ["Savings", "Finance", "Tips"],
-      "link": "/posts/art-of-saving-money.html"
-    },
-    {
-      "title": "Building Wealth Over Time",
-      "description": "Understand how to build wealth through consistent investing.",
-      "image": "./assets/images/building-wealth.jpg",
-      "tags": ["Wealth", "Investing", "Long-Term"],
-      "link": "/posts/building-wealth-over-time.html"
-    }
-  ]
-  
+  {
+    "title": "3rd Post Title",
+    "description": "This is the description for the 10th post...",
+    "image": "assets/images/post10.jpg",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/bharatpe-investment-app.html"
+  },
+  {
+    "title": "Investment Strategies for 2024",
+    "description": "Explore the best strategies to maximize your returns in the upcoming year.",
+    "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "tags": ["Investing", "Strategy", "2024 Trends"],
+    "link": "/posts/investment-strategies-2024.html"
+  },
+  {
+    "title": "The Art of Saving Money",
+    "description": "Learn how to save more effectively for your future.",
+    "image": "./assets/images/saving-money.jpg",
+    "tags": ["Savings", "Finance", "Tips"],
+    "link": "/posts/art-of-saving-money.html"
+  },
+  {
+    "title": "Building Wealth Over Time",
+    "description": "Understand how to build wealth through consistent investing.",
+    "image": "./assets/images/building-wealth.jpg",
+    "tags": ["Wealth", "Investing", "Long-Term"],
+    "link": "/posts/building-wealth-over-time.html"
+  },
+  {
+    "title": "Investment Strategies for 2024",
+    "description": "Explore the best strategies to maximize your returns in the upcoming year.",
+    "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "tags": ["Investing", "Strategy", "2024 Trends"],
+    "link": "/posts/investment-strategies-2024.html"
+  },
+  {
+    "title": "The Art of Saving Money",
+    "description": "Learn how to save more effectively for your future.",
+    "image": "./assets/images/saving-money.jpg",
+    "tags": ["Savings", "Finance", "Tips"],
+    "link": "/posts/art-of-saving-money.html"
+  },
+  {
+    "title": "Building Wealth Over Time",
+    "description": "Understand how to build wealth through consistent investing.",
+    "image": "./assets/images/building-wealth.jpg",
+    "tags": ["Wealth", "Investing", "Long-Term"],
+    "link": "/posts/building-wealth-over-time.html"
+  },
+  {
+    "title": "3rd Post Title",
+    "description": "This is the description for the 10th post...",
+    "image": "assets/images/post10.jpg",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/bharatpe-investment-app.html"
+  },
+  {
+    "title": "Investment Strategies for 2024",
+    "description": "Explore the best strategies to maximize your returns in the upcoming year.",
+    "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "tags": ["Investing", "Strategy", "2024 Trends"],
+    "link": "/posts/investment-strategies-2024.html"
+  },
+  {
+    "title": "The Art of Saving Money",
+    "description": "Learn how to save more effectively for your future.",
+    "image": "./assets/images/saving-money.jpg",
+    "tags": ["Savings", "Finance", "Tips"],
+    "link": "/posts/art-of-saving-money.html"
+  },
+  {
+    "title": "Building Wealth Over Time",
+    "description": "Understand how to build wealth through consistent investing.",
+    "image": "./assets/images/building-wealth.jpg",
+    "tags": ["Wealth", "Investing", "Long-Term"],
+    "link": "/posts/building-wealth-over-time.html"
+  },
+  {
+    "title": "Investment Strategies for 2024",
+    "description": "Explore the best strategies to maximize your returns in the upcoming year.",
+    "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "tags": ["Investing", "Strategy", "2024 Trends"],
+    "link": "/posts/investment-strategies-2024.html"
+  },
+  {
+    "title": "The Art of Saving Money",
+    "description": "Learn how to save more effectively for your future.",
+    "image": "./assets/images/saving-money.jpg",
+    "tags": ["Savings", "Finance", "Tips"],
+    "link": "/posts/art-of-saving-money.html"
+  },
+  {
+    "title": "Building Wealth Over Time",
+    "description": "Understand how to build wealth through consistent investing.",
+    "image": "./assets/images/building-wealth.jpg",
+    "tags": ["Wealth", "Investing", "Long-Term"],
+    "link": "/posts/building-wealth-over-time.html"
+  },
+  {
+    "title": "3rd Post Title",
+    "description": "This is the description for the 10th post...",
+    "image": "assets/images/post10.jpg",
+    "tags": ["#ExampleTag"],
+    "link": "/posts/bharatpe-investment-app.html"
+  },
+  {
+    "title": "Investment Strategies for 2024",
+    "description": "Explore the best strategies to maximize your returns in the upcoming year.",
+    "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "tags": ["Investing", "Strategy", "2024 Trends"],
+    "link": "/posts/investment-strategies-2024.html"
+  },
+  {
+    "title": "The Art of Saving Money",
+    "description": "Learn how to save more effectively for your future.",
+    "image": "./assets/images/saving-money.jpg",
+    "tags": ["Savings", "Finance", "Tips"],
+    "link": "/posts/art-of-saving-money.html"
+  },
+  {
+    "title": "Building Wealth Over Time",
+    "description": "Understand how to build wealth through consistent investing.",
+    "image": "./assets/images/building-wealth.jpg",
+    "tags": ["Wealth", "Investing", "Long-Term"],
+    "link": "/posts/building-wealth-over-time.html"
+  },
+  {
+    "title": "Investment Strategies for 2024",
+    "description": "Explore the best strategies to maximize your returns in the upcoming year.",
+    "image": "./assets/images/sajad-nori-LWD60a5a15I-unsplash.jpg",
+    "tags": ["Investing", "Strategy", "2024 Trends"],
+    "link": "/posts/investment-strategies-2024.html"
+  },
+  {
+    "title": "The Art of Saving Money",
+    "description": "Learn how to save more effectively for your future.",
+    "image": "./assets/images/saving-money.jpg",
+    "tags": ["Savings", "Finance", "Tips"],
+    "link": "/posts/art-of-saving-money.html"
+  },
+  {
+    "title": "Building Wealth Over Time",
+    "description": "Understand how to build wealth through consistent investing.",
+    "image": "./assets/images/building-wealth.jpg",
+    "tags": ["Wealth", "Investing", "Long-Term"],
+    "link": "/posts/building-wealth-over-time.html"
+  }
+]
