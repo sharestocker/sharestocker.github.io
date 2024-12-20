@@ -98,7 +98,7 @@
                 // Best-Stories section
                 async function fetchBestStories() {
                   try {
-                    const response = await fetch("/best-stories.json");
+                    const response = await fetch("best-stories.json");
                     const stories = await response.json();
                     const storiesList =
                       document.getElementById("best-stories-list");
@@ -178,7 +178,7 @@
           <script>
             // Function to fetch posts from posts.json and dynamically display them
             async function loadRecentPosts() {
-              const response = await fetch("./posts.json"); // Adjust path as needed
+              const response = await fetch("posts.json"); // Adjust path as needed
               const posts = await response.json();
 
               const recentPostsContainer =
