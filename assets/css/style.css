@@ -1416,3 +1416,71 @@ td {
   border-top: 1px solid #ccc; /* Customize the border as desired */
   margin: 20px auto; /* Center the line horizontally */
 }
+
+
+
+
+
+
+/* Center the pagination on the screen */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+/* Styling for pagination buttons */
+.pagination-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-button:hover {
+  background-color: #0073e6;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Active button styling */
+.pagination-button.active {
+  background-color: #0073e6;
+  color: white;
+  cursor: default;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .pagination-button {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .pagination-button {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
