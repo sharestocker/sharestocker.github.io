@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-("use strict");
+
 
 async function fetchRelatedStories() {
   try {
